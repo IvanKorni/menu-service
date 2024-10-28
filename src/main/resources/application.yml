@@ -1,0 +1,20 @@
+server:
+  port: 9091
+  tomcat:
+    connection-timeout: 3s
+spring:
+  application:
+    name: menu-service
+  lifecycle:
+    timeout-per-shutdown-phase: 30s # время, в течение которого текущие запросы будут отрабатываться после получения сигнала SIGTERM
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:15432/menu_service_db
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: true
