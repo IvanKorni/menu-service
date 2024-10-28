@@ -4,13 +4,13 @@ import com.menuservice.dto.*;
 import com.menuservice.exception.MenuServiceException;
 import com.menuservice.mapper.MenuItemMapper;
 import com.menuservice.service.MenuService;
+import com.menuservice.storage.model.MenuItemProjection;
 import com.menuservice.storage.repositories.MenuItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.menuservice.storage.model.MenuItemProjection;
 
 import java.util.ArrayList;
 import java.util.List;
